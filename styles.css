@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+html {
+   background: green;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   border-left: 1px solid gray;
+   border-right: 1px solid gray;
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 400px;
+   max-width: 1024px;   
+   width: 100%; 
+}
+
+
+
+
+body > header nav.pages {
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+   
+}
+
+body > header nav.pages::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+body > header > nav.pages > ul {
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+
+}
+
+body > header nav.pages li {
+   background-color: lightblue;
+   height: 30px;
+   letter-spacing: 2px;
+   line-height: 30px;
+   margin-left: 0%;
+   margin-right: 2%;
+   width: 12%;
+   transform: perspective(50px) rotateX(20deg);
+}
+
+
+body > header nav.pages li a {
+   color: red;
+   display: block;
+   text-align: center;
+   width: 100%;
+   color: red;
+    
+}
+
+a#navicon {
+   display: none;
+}
+
+article {
+   width:70%;
+   margin: 20px auto;
+}
+
+article h1 {
+   
+   color: blue;
+   font-size: 2.5em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+}
+
+article p {
+   margin-bottom:20px;
+}
+
+
+
+div.container {
+   width: 80%;
+   margin: 20px auto;
+}
+
+div.foodpic {
+  margin: 5px;
+  border: 1px solid ;
+  float: left;
+  width: 170px;
+
+}
+
+
+div.foodpic img {
+  width: 80%;
+  height: auto;
+  transition: all 1.5s;
+}
+
+
+div.pics {
+  padding: 15px;
+  text-align: center;
+  transition: all 2s;
+}
+
+/* Join Me Styles */
+.formImg {
+  position: relative;
+  width: 15%;
+  float:left;
+  margin: 40px 60px;
+}
+
+.formTbl {
+  position: relative;
+  width: 50%;
+  margin: 20px 5px;
+  float:left;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.formImg:hover .image {
+  opacity: 0.3;
+}
+
+.formImg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 13px;
+  padding: 8px 16px;
+ 
+ 
+}
+
+footer {
+   clear: both;
+   color: black;    
+   font-size: 1em;  
+
+   width: 100%;
+}
+
+footer nav ul {
+   float: left;
+   padding: 20px 30px;
+   width: 20%;
+}
+
+footer section {
+   float: right;
+   padding: 20px 30px;
+   width: 30%;
+}
+
+footer nav ul a {
+   color: white;
+}
+
+footer nav ul a:hover {
+   text-decoration: underline;
+}
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+
+    
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+
