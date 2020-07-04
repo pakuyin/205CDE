@@ -1,0 +1,18 @@
+/* Validation Styles */
+
+ input#namebox:focus:invalid {
+	background-color: rgb(255, 230, 230);
+	background-image: url(images/rb_warning.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}
+
+ input#namebox:focus:valid {
+	background-color: rgb(220, 255, 220);
+	background-image: url(images/rb_okay.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}	
+

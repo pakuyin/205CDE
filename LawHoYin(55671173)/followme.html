@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Travel with Ben in Korea</title>
+   <link href="reset.css" rel="stylesheet" />
+   <link href="styles.css" rel="stylesheet" />  
+   <link href="tables.css" rel="stylesheet" /> 
+   <link href="Validation.css" rel="stylesheet" /> 
+ <script src="submit.js"></script>
+</head>
+
+<body>
+   <header>
+       <div id="slider">
+	      <figure>
+	      <img src="images/logo1.png" alt="Travel with Ben in Korea" class="logoimg" />
+		  <img src="images/logo2.png" alt="Travel with Ben in Korea" class="logoimg" />
+		  <img src="images/logo3.png" alt="Travel with Ben in Korea" class="logoimg" />
+		  <img src="images/logo4.png" alt="Travel with Ben in Korea" class="logoimg" />
+		  <img src="images/logo5.png" alt="Travel with Ben in Korea" class="logoimg" />
+          <figure>
+	  </div>     
+	  <nav class="tabs"> <a id="navicon" href="#"><img src="images/lht_navicon.png" alt="" /></a>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a class="current" href="#">Join</a></li>
+		    <li><a href="comment.html">Comment</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+ <section>
+ <article>
+       <h1>Joining the tour</h1>
+      <p>Watching the photos and videos is all you need? Don't you want to go to South Korea? Here is your chance.
+	     We are now organizing a trip to Seoul South Korea. If you are interested to join and enjoy the remarkable 
+		 trip in Korea please fill in the form below and we will contact you as soon as possible. So what are you 
+		 waiting for come and join us and have an excellect travel to Korea.</p>
+ </article>
+	<div class="formImg">
+		<img src=".\images\img_avatar.png" alt="Avatar" class="image" style="width:100%">
+		<div class="middle">
+			<div class="text">Join me...</div>
+		</div>
+	</div>
+
+ 
+	<div class="formTbl">
+	<form action="insert.php" method="POST">		
+	<fieldset>
+	<legend>Personal Information:</legend>
+		<input id="namebox" type="text" name="fname" placeholder="First name" required/> <br>  
+		<input id="namebox" type="text" name="lname" placeholder="Last name" required/> <br>  
+		<input id="namebox" type="email" name="email" placeholder="Email" required/> <br> 
+		<input type="tel" name="mobile" placeholder="Mobile"> <br>
+		<input type="text" name="Number of people" placeholder="Number of people"> <br><br>		
+		
+		<input type="radio" name="gender" value="male" checked> Male  
+		<input type="radio" name="gender" value="female"> Female <br> <br>
+		
+		Birthday (month and year): <br>
+		<input type="date" name="bdaymonth">  <br> <br>
+		
+		<label for="rangeBox">Duration of the trip: <br></label>
+		
+		3 days
+		<input name="tripDuration" id="rangeBox" type="range"
+		       value="0" step="2" min ="0" max="8" />
+
+		7 days<br><br>
+
+		
+		Starting date of trip: <br>
+		<input type="date" name="start">  <br> <br>
+		
+		Finishing date of trip: <br>
+		<input type="date" name="end">  <br> <br>
+		
+		Address:<br>
+		<textarea placeholder="Comment" name="comment" rows="10" cols="30" > 
+		</textarea> <br> <br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</fieldset>
+	</form>
+	</div> 
+	 
+	</section>
+      
+   <footer>
+      <nav>
+           
+      </nav>
+      <section>
+         Ben Law <br />
+         Mobile: (852) 7218-3171<br />
+         Email: ben401228@gmail.com <br />
+      </section>   
+	   
+
+	   
+	   
+   </footer>
+      
+</body>
+</html>

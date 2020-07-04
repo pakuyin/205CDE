@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+
+/* set up the font to be used for the page */
+div.map {
+   width: 90%;
+   margin: 20px auto;
+}
+
+/* set the size of the definition list &lt;dl&gt; and add the background image */
+#imap {
+	display:block; 
+	width:437px; 
+	height:421px; 
+	background:url(./images/koreamap.png) no-repeat; 
+	position:relative;
+}
+
+/* set up the definition list <dt><a>&gt; to hold the background image for the hover state */
+#imap a#title {
+	display:block; 
+	width:437px; 
+	height:0; 
+	padding-top:421px; 
+	overflow:hidden; 
+	position:absolute; 
+	left:0; 
+	top:0; 
+	background:transparent url(./images/koreamaphover.png) no-repeat 437px 690px; 
+	cursor:default;
+	}
+
+/* the hack for IE pre IE6 */
+* html #imap a#title {
+  height:421px;
+  height:0;
+  }
+  
+/* the <dt><a> hover style to move the background image to position 0 0*/
+#imap a#title:hover {
+	background-position: 0 0; 
+	z-index:10;
+	}
+
+/* place the <dd>s in the correct absolute position */
+#imap dd {
+  position:absolute; 
+  padding:0; 
+  margin:0;
+  }
+#imap #pics {
+  left:104px; 
+  top:255px; 
+  z-index:20;
+  }
+#imap #picc {
+  left:117px; 
+  top:298px; 
+  z-index:20;
+  }
+  
+#imap #pick {
+  left:201px; 
+  top:302px; 
+  z-index:20;
+  }
+#imap #picj {
+  left:98px; 
+  top:335px; 
+  z-index:20;
+  }
+
+/* style the <dd><a> links physical size and the background image for the hover */
+#imap a#seoul, #imap a#chungcheong, #imap a#kangwon, #imap a#jeolla {
+  display:block; 
+  width:20px; 
+  height:20px; 
+  background:transparent url(./images/hover.png) -100px -100px no-repeat; 
+  text-decoration:none; 
+  z-index:20;
+  
+  }
+ 
+/* style the span text so that it is not initially displayed */
+#imap a span, #imap a:visited span {
+  display:none;
+  } 
+ 
+/* move the link background image to position 0 0 when hovered */
+#imap a#seoul:hover, #imap a#chungcheong:hover, #imap a#kangwon:hover, #imap a#jeolla:hover {
+  background-position:0 0;
+  }
+ 
+ /* define the common styling for the span text */
+#imap a:hover span {
+  position:absolute;  
+  width:388px; 
+  display:block; 
+  font-family:arial; 
+  font-size:12px; 
+  background:#fff; 
+  color:#000; 
+  border:1px solid #000; 
+  padding:5px;
+  }
+/* the hack for IE pre IE6 */
+* html #imap a:hover span {
+  width:437px; w\idth:680px;
+  }
+ 
+/* move the span text to a nice position to display */
+#imap a#seoul:hover span {
+   
+  top:-130px;
+  }
+#imap a#chungcheong:hover span {
+   top:-110px;
+  }
+  
+#imap a#kangwon:hover span {
+  top:-110px;
+  }
+  
+#imap a#jeolla:hover span { 
+	top:-130px;
+  } 
+ 
+/* add the style for the link span text - first line */
+#imap a span:first-line {
+  font-weight:bold; 
+  font-style:italic;
+  }
+  

@@ -1,0 +1,130 @@
+.messages {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.messages ul {
+	padding: 0px;
+    list-style-type: none;
+}
+
+.messages ul li {
+    height: auto;
+    margin-bottom: 10px;
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.messages ul li span {
+    display: inline-block;
+	left: 10px;
+    max-width: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.messages ul li span.right {
+    display: inline-block;
+	left: -10px;
+    max-width: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+}
+
+
+
+.messages ul li span.left:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -7.5px;
+    top: 7px;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid white;
+}
+
+.messages ul li span.left:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -8px;
+    top: 7px;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid black;
+}
+
+.messages ul li span.right:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 6px;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #dbedfe;
+}
+
+.messages ul li span.right:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -9px;
+    top: 6px;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid black;
+}
+
+.messages ul li span.right {
+    float: right;
+    background-color: #dbedfe;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+cite img{
+
+   border-radius: 50%;
+ 
+}
+blockquote {
+   color: rgb(64, 202, 202);
+   font-size: 1.1em;
+   padding: 10px;
+   width: 25%; 
+}
+
+blockquote.right {
+   width: 13%; 
+}
